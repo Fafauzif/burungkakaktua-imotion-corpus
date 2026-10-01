@@ -1,0 +1,268 @@
+{
+  "text_changes": "outer_whitespace_trim_and_NUL_removal_only",
+  "deduplication": "same_platform_source_id_and_exact_original_payload_only;different_payload_versions_retained",
+  "excluded_fields": "author_and_profile_metadata;media;redundant_URL_aliases;unused_metrics",
+  "source_row_basis": "1_based_data_row_or_JSON_array_index_excluding_CSV_header",
+  "input_manifests": [
+    {
+      "source_file": "dataset_x-tweet-scraper_2026-10-01_07-39-17-883.json",
+      "bytes": 93310873,
+      "sha256": "03a6a43c6bc71e01ba382df5645d75558443f0803364b8a525995f6af3385e44",
+      "source_id": "x:03a6a43c6bc71e01",
+      "platform": "x"
+    },
+    {
+      "source_file": "dataset_x-tweet-scraper_2026-10-01_07-51-26-594.json",
+      "bytes": 123913644,
+      "sha256": "8b8df84ec2435081b26f485c5fc9cf5577b7b2412861f8197a3916f49a9cef77",
+      "source_id": "x:8b8df84ec2435081",
+      "platform": "x"
+    },
+    {
+      "source_file": "IMOTION_AgentReach_Raw_2026-10-01.zip",
+      "bytes": 19526633,
+      "sha256": "a6160f9d01837d14c01c6a65e71a7909a10c4451ed4f2d4e21ade9d1c5b222f4",
+      "platform": "youtube;reddit"
+    }
+  ],
+  "platforms": {
+    "x": {
+      "raw_rows": 32198,
+      "retained_rows": 32198,
+      "removed_rows": 0,
+      "removal_reasons": {},
+      "raw_unique_nonempty_source_ids": 32198,
+      "raw_duplicate_id_excess_rows": 0,
+      "different_payload_id_groups_retained": 0,
+      "trim_or_nul_changed_rows": 0,
+      "nul_containing_rows": 0,
+      "columns": [
+        "record_id",
+        "record_version",
+        "source_id",
+        "record_type",
+        "text",
+        "published_at",
+        "record_url",
+        "parent_id",
+        "conversation_id",
+        "quoted_post_id",
+        "language",
+        "like_count",
+        "reply_count",
+        "view_count",
+        "search_term",
+        "source_row",
+        "timestamp_basis",
+        "duplicate_id_flag"
+      ],
+      "files": [
+        {
+          "path": "data/x/posts.csv",
+          "rows": 32198,
+          "bytes": 20201958,
+          "sha256": "75175b591f819fa0af994767210103dbc41b22f487ce260f9d14a3b3b9f4bab0"
+        }
+      ],
+      "retained_text_sha256_length_prefixed": "733772bc8228b7c088c28323ec50c3162dcf770ebf02f54631e172c03de71aea",
+      "source_to_output_text_preservation_verified": true,
+      "row_reconciliation_verified": true,
+      "missing_parent_id_reply_rows_retained": 373,
+      "note_tweet_text_checks": {
+        "present": 5083,
+        "equal_to_top_level_text": 5083
+      },
+      "full_text_selected_rows": 0,
+      "quote_context": {
+        "raw_direct_quote_objects": 784,
+        "retained_context_versions": 660,
+        "unique_quoted_post_ids": 616,
+        "identical_payload_duplicates_collapsed": 124,
+        "different_payload_id_groups_retained": 40,
+        "context_rows_excluded_from_corpus": 660,
+        "text_preservation_verified": true,
+        "scope": "direct_quoted_tweet_objects_only;not_recursively_expanded"
+      }
+    },
+    "youtube": {
+      "raw_rows": 50128,
+      "retained_rows": 49954,
+      "removed_rows": 174,
+      "removal_reasons": {
+        "symbol_only": 173,
+        "empty_text": 1
+      },
+      "raw_unique_nonempty_source_ids": 50128,
+      "raw_duplicate_id_excess_rows": 0,
+      "different_payload_id_groups_retained": 0,
+      "trim_or_nul_changed_rows": 3317,
+      "nul_containing_rows": 0,
+      "columns": [
+        "record_id",
+        "record_version",
+        "source_id",
+        "record_type",
+        "text",
+        "record_url",
+        "parent_id",
+        "like_count",
+        "published_at_estimated",
+        "published_at_text",
+        "time_precision",
+        "time_uncertainty",
+        "time_window_flag",
+        "collected_at",
+        "collected_at_basis",
+        "source_row",
+        "duplicate_id_flag"
+      ],
+      "files": [
+        {
+          "path": "data/youtube/comments.csv",
+          "rows": 49954,
+          "bytes": 23668097,
+          "sha256": "618e7bfe122b9a0ea25f991ec06c4455e547a99ee1ca3fa7c7d8aa07df919398"
+        }
+      ],
+      "retained_text_sha256_length_prefixed": "365f357790c7bbbcf2954f5f30b555818815a31e0c7561bae02792e6470ce8ea",
+      "source_to_output_text_preservation_verified": true,
+      "row_reconciliation_verified": true,
+      "source_attempts": 320,
+      "source_status_counts": {
+        "returned": 317,
+        "capped": 2,
+        "partial_timeout": 1
+      },
+      "sources_with_zero_exported_rows": 64
+    },
+    "reddit": {
+      "raw_rows": 393,
+      "retained_rows": 393,
+      "removed_rows": 0,
+      "removal_reasons": {},
+      "raw_unique_nonempty_source_ids": 393,
+      "raw_duplicate_id_excess_rows": 0,
+      "different_payload_id_groups_retained": 0,
+      "trim_or_nul_changed_rows": 0,
+      "nul_containing_rows": 0,
+      "columns": [
+        "record_id",
+        "record_version",
+        "source_id",
+        "record_id_type",
+        "record_type",
+        "text",
+        "record_url",
+        "parent_id",
+        "published_at",
+        "published_at_text",
+        "collected_at",
+        "collected_at_basis",
+        "source_locator",
+        "text_scope",
+        "source_row",
+        "duplicate_id_flag"
+      ],
+      "files": [
+        {
+          "path": "data/reddit/posts_comments.csv",
+          "rows": 393,
+          "bytes": 207127,
+          "sha256": "b83f7af9d5fb54b7fa00ec3c29b8e34f671488e7a439bdcc092a94ab3530da01"
+        }
+      ],
+      "retained_text_sha256_length_prefixed": "9f6aa199e75000ce3e7e06506c6acefa031bf4675ddc703dbb07173fe75b720d",
+      "source_to_output_text_preservation_verified": true,
+      "row_reconciliation_verified": true,
+      "source_attempts": 19,
+      "source_status_counts": {
+        "no_thread_title": 6,
+        "collected_visible_subset": 13
+      },
+      "context_rows_excluded_from_corpus": 1,
+      "missing_publication_date_rows_retained": 393
+    }
+  },
+  "youtube_collection_runs_from_supplied_provenance": [
+    {
+      "batch": 1,
+      "manifest": "youtube_web_seeds.csv",
+      "selected_rows_at_start": 11,
+      "started_at": "2026-10-01T06:17:20.871843+00:00",
+      "workers": 3,
+      "comment_cap_per_video": 3000,
+      "process_timeout_seconds": 240,
+      "request_timeout_seconds": 15,
+      "request_retries": 1,
+      "extractor_retries": 1,
+      "sort": "new",
+      "resume_existing_completed_jobs": true,
+      "checkpoint_wrapper": false,
+      "command": "python scripts/collect_youtube.py --manifest discovery/youtube_web_seeds.csv --workers 3 --cap 3000 --timeout 240",
+      "notes": "The first manifest initially held 11 seeds and was then expanded to 194. Batch 2 skips previously completed jobs."
+    },
+    {
+      "batch": 2,
+      "manifest": "youtube_web_seeds.csv",
+      "selected_rows_at_start": 194,
+      "started_at": "2026-10-01T06:21:20.868384+00:00",
+      "workers": 3,
+      "comment_cap_per_video": 3000,
+      "process_timeout_seconds": 240,
+      "request_timeout_seconds": 15,
+      "request_retries": 1,
+      "extractor_retries": 1,
+      "sort": "new",
+      "resume_existing_completed_jobs": true,
+      "checkpoint_wrapper": true,
+      "command": "python scripts/collect_youtube.py --manifest discovery/youtube_web_seeds.csv --workers 3 --cap 3000 --timeout 240",
+      "notes": "The first manifest initially held 11 seeds and was then expanded to 194. Batch 2 skips previously completed jobs."
+    },
+    {
+      "batch": 3,
+      "manifest": "youtube_extra_seeds.csv",
+      "selected_rows_at_start": 98,
+      "started_at": "2026-10-01T06:25:57.236941+00:00",
+      "workers": 2,
+      "comment_cap_per_video": 3000,
+      "process_timeout_seconds": 240,
+      "request_timeout_seconds": 15,
+      "request_retries": 1,
+      "extractor_retries": 1,
+      "sort": "new",
+      "resume_existing_completed_jobs": true,
+      "checkpoint_wrapper": true,
+      "command": "python scripts/collect_youtube.py --manifest discovery/youtube_extra_seeds.csv --workers 2 --cap 3000 --timeout 240",
+      "notes": "98 supplementary sources; at most five concurrent video jobs while another batch runs."
+    },
+    {
+      "batch": 4,
+      "manifest": "youtube_reserve_seeds.csv",
+      "selected_rows_at_start": 28,
+      "started_at": "2026-10-01T06:41:41.350117+00:00",
+      "workers": 3,
+      "comment_cap_per_video": 3000,
+      "process_timeout_seconds": 240,
+      "request_timeout_seconds": 15,
+      "request_retries": 1,
+      "extractor_retries": 1,
+      "sort": "new",
+      "resume_existing_completed_jobs": true,
+      "checkpoint_wrapper": true,
+      "command": "python scripts/collect_youtube.py --manifest discovery/youtube_reserve_seeds.csv --workers 3 --cap 3000 --timeout 240",
+      "notes": "Activated after the 194-source main batch finished. At most five concurrent video jobs with the supplemental batch."
+    }
+  ],
+  "x_run_settings": "not_embedded_in_supplied_exports",
+  "total_raw_rows": 82719,
+  "total_retained_rows": 82545,
+  "total_removed_rows": 174,
+  "context_rows_excluded_from_corpus": 661,
+  "metadata_files": [
+    "metadata/x_sources.csv",
+    "metadata/youtube_sources.csv",
+    "metadata/reddit_sources.csv",
+    "metadata/context.csv",
+    "metadata/x_quote_context.csv"
+  ]
+}

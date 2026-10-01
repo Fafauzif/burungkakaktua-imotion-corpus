@@ -1,0 +1,230 @@
+{
+  "input_file": "IMOTION_cleaned_reviews_935950.csv",
+  "input_sha256": "6bbb8b69bfa11ce535a8c5721a68f81c8e99aa7b41f68223f75bd773f400c231",
+  "counts": {
+    "input_reviews": 935950,
+    "retained_reviews": 929596,
+    "input_developer_replies": 486402,
+    "retained_developer_replies": 486393,
+    "removed_symbol_only": 6349,
+    "replies_to_excluded_review": 2205,
+    "reply_removed_symbol_only": 9,
+    "removed_empty_text": 5
+  },
+  "apps": [
+    {
+      "app_name": "Bank Aladin",
+      "source_id": "google_play_bank_aladin",
+      "input_reviews": 33501,
+      "retained_reviews": 33410,
+      "input_developer_replies": 29026,
+      "retained_developer_replies": 29026,
+      "removed_symbol_only": 91,
+      "replies_to_excluded_review": 82
+    },
+    {
+      "app_name": "Allo Bank",
+      "source_id": "google_play_allo_bank",
+      "input_reviews": 45902,
+      "retained_reviews": 45697,
+      "input_developer_replies": 36350,
+      "retained_developer_replies": 36350,
+      "removed_symbol_only": 205,
+      "replies_to_excluded_review": 153
+    },
+    {
+      "app_name": "Bank Jago / Jago Syariah",
+      "source_id": "google_play_bank_jago_jago_syariah",
+      "input_reviews": 84043,
+      "retained_reviews": 83320,
+      "input_developer_replies": 65595,
+      "retained_developer_replies": 65595,
+      "removed_symbol_only": 723,
+      "replies_to_excluded_review": 518
+    },
+    {
+      "app_name": "Bank Saqu",
+      "source_id": "google_play_bank_saqu",
+      "input_reviews": 17817,
+      "retained_reviews": 17690,
+      "input_developer_replies": 17609,
+      "retained_developer_replies": 17609,
+      "removed_symbol_only": 127,
+      "replies_to_excluded_review": 126
+    },
+    {
+      "app_name": "blu by BCA Digital",
+      "source_id": "google_play_blu_by_bca_digital",
+      "input_reviews": 36380,
+      "retained_reviews": 36195,
+      "input_developer_replies": 36380,
+      "retained_developer_replies": 36377,
+      "removed_symbol_only": 185,
+      "replies_to_excluded_review": 185,
+      "reply_removed_symbol_only": 3
+    },
+    {
+      "app_name": "BYOND by BSI",
+      "source_id": "google_play_byond_by_bsi",
+      "input_reviews": 70602,
+      "retained_reviews": 70510,
+      "input_developer_replies": 70166,
+      "retained_developer_replies": 70166,
+      "removed_symbol_only": 92,
+      "replies_to_excluded_review": 89
+    },
+    {
+      "app_name": "Jenius",
+      "source_id": "google_play_jenius",
+      "input_reviews": 130872,
+      "retained_reviews": 130488,
+      "input_developer_replies": 42379,
+      "retained_developer_replies": 42378,
+      "removed_symbol_only": 380,
+      "replies_to_excluded_review": 130,
+      "reply_removed_symbol_only": 1,
+      "removed_empty_text": 4
+    },
+    {
+      "app_name": "SeaBank",
+      "source_id": "google_play_seabank",
+      "input_reviews": 457824,
+      "retained_reviews": 453424,
+      "input_developer_replies": 130625,
+      "retained_developer_replies": 130620,
+      "removed_symbol_only": 4399,
+      "replies_to_excluded_review": 777,
+      "reply_removed_symbol_only": 5,
+      "removed_empty_text": 1
+    },
+    {
+      "app_name": "Superbank",
+      "source_id": "google_play_superbank",
+      "input_reviews": 59009,
+      "retained_reviews": 58862,
+      "input_developer_replies": 58272,
+      "retained_developer_replies": 58272,
+      "removed_symbol_only": 147,
+      "replies_to_excluded_review": 145
+    }
+  ],
+  "output_files": [
+    {
+      "path": "data/google_play/bank_aladin/reviews.csv",
+      "rows": 33410,
+      "bytes": 7851312,
+      "sha256": "bf18270c064cfe4e5a668efebfa63e79fa4458982818c719479809d4ed7954b1"
+    },
+    {
+      "path": "data/google_play/bank_aladin/developer_replies.csv",
+      "rows": 29026,
+      "bytes": 7615734,
+      "sha256": "47d3b38520425b4564e132f97d995fe8558ad956aef737bc80d7693e2fa4f3fb"
+    },
+    {
+      "path": "data/google_play/allo_bank/reviews.csv",
+      "rows": 45697,
+      "bytes": 10658622,
+      "sha256": "7b217dd8c19914d564d12ff29981b2d67dc5be76b14c1ef508b129fe13412faf"
+    },
+    {
+      "path": "data/google_play/allo_bank/developer_replies.csv",
+      "rows": 36350,
+      "bytes": 14161666,
+      "sha256": "7c5b516e1441a6cf158fb92e82eac2f62e2d475be7673d1eaf9ee34e2e9e2e82"
+    },
+    {
+      "path": "data/google_play/bank_jago_jago_syariah/reviews.csv",
+      "rows": 83320,
+      "bytes": 19571726,
+      "sha256": "cb1f92063b36dd42ae6fee829bd8ab1e0dec39f6c3692de389390a5cdb70a5cc"
+    },
+    {
+      "path": "data/google_play/bank_jago_jago_syariah/developer_replies.csv",
+      "rows": 65595,
+      "bytes": 27884608,
+      "sha256": "10faa8dae73306eeffb69e785986f19517a2a5e97e1756b805ba3c6cff8428d0"
+    },
+    {
+      "path": "data/google_play/bank_saqu/reviews.csv",
+      "rows": 17690,
+      "bytes": 3340932,
+      "sha256": "cdab1ddf760d4a3f0ffe2e126885885f6a040a765afd3cd4b3cc505782e78462"
+    },
+    {
+      "path": "data/google_play/bank_saqu/developer_replies.csv",
+      "rows": 17609,
+      "bytes": 7212233,
+      "sha256": "f3256cbd385efc76e551df6857864260b2464d257b29e95f7c06db08052a9f24"
+    },
+    {
+      "path": "data/google_play/blu_by_bca_digital/reviews.csv",
+      "rows": 36195,
+      "bytes": 8545640,
+      "sha256": "442a1bbb8514c67332c7e1d4720c439496ffaaceeb2d5f94de5cceb427ebc4ca"
+    },
+    {
+      "path": "data/google_play/blu_by_bca_digital/developer_replies.csv",
+      "rows": 36377,
+      "bytes": 14437457,
+      "sha256": "82669aefa19e9465fddc7dc22c518f4ad446a74411ce5e2476340489b729bf4e"
+    },
+    {
+      "path": "data/google_play/byond_by_bsi/reviews.csv",
+      "rows": 70510,
+      "bytes": 17306241,
+      "sha256": "eba2c586c816400a8d59ec853f5310ef046d09a36146426d7377bad54d5100f1"
+    },
+    {
+      "path": "data/google_play/byond_by_bsi/developer_replies.csv",
+      "rows": 70166,
+      "bytes": 29381896,
+      "sha256": "44f15ef01477b00273a925a65f45fcdf2139af0908a7de325b77a553584f142d"
+    },
+    {
+      "path": "data/google_play/jenius/reviews.csv",
+      "rows": 130488,
+      "bytes": 30749295,
+      "sha256": "89865b2f2606a1d0d2ee55d5b5ba03c4d928925ef354390f848716e07769f81f"
+    },
+    {
+      "path": "data/google_play/jenius/developer_replies.csv",
+      "rows": 42378,
+      "bytes": 10019109,
+      "sha256": "9c101ebd6b384f13351dde2832f4efc34652c346a078415ea4a023e19c85dd67"
+    },
+    {
+      "path": "data/google_play/seabank/reviews.csv",
+      "rows": 453424,
+      "bytes": 75991173,
+      "sha256": "6e3588d1c98ded3852e5ef441cbe6d5b102909974818221c3b0aa48d1a1fbb14"
+    },
+    {
+      "path": "data/google_play/seabank/developer_replies.csv",
+      "rows": 130620,
+      "bytes": 56131277,
+      "sha256": "adc6c2d95f0bf75d8419cb68593c19fd713c0fb75655d0a95bf4756644747619"
+    },
+    {
+      "path": "data/google_play/superbank/reviews.csv",
+      "rows": 58862,
+      "bytes": 13554213,
+      "sha256": "40399f6724e207178011fd96a4cd48b1cececeb5683599d34d7f326d1571b7c9"
+    },
+    {
+      "path": "data/google_play/superbank/developer_replies.csv",
+      "rows": 58272,
+      "bytes": 23250343,
+      "sha256": "3bc05374bea7f1ebe30d0c9f1e9f2b9cc088fdffa9d658302fe9cc4877325705"
+    },
+    {
+      "path": "reports/google_play_removed.csv",
+      "rows": 6363,
+      "bytes": 548448,
+      "sha256": "3e50fc048012266871bd876e0b62dfb614629c08b17d841476f62f66df63c339"
+    }
+  ],
+  "retained_review_text_sha256": "208e3909f0b33fcd78fa8c8285ae57c5afcd99ece0e56407726706bf5707c56b",
+  "retained_reply_text_sha256": "db789c5972fb14c7145c71aae137936b08e1b85c1528f9d2f05983e5ff4c8c77",
+  "text_hash_encoding": "UTF-8 JSON arrays, ensure_ascii=False, compact separators, newline per retained record, input order"
+}

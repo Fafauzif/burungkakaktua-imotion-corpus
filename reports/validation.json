@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-10-01T08:19:58.688224+00:00",
+  "csv_max_bytes": 90000000,
+  "csv_row_limit": null,
+  "checks": {
+    "classifier_cases": 22,
+    "csv_scan": {
+      "csv_files": 30,
+      "csv_records": 1506091,
+      "data_csv_files": 21,
+      "data_records": 1498534
+    },
+    "stage_manifests": {
+      "entries_checked": 22,
+      "data_csv_files": 21,
+      "unmanifested_data_csvs": 0
+    },
+    "google_play_source_reconciliation": {
+      "input_reviews": 935950,
+      "input_developer_replies": 486402,
+      "retained_reviews": 929596,
+      "retained_developer_replies": 486393,
+      "replies_to_excluded_review": 2205,
+      "removed_reviews": 6354,
+      "removed_developer_replies": 9
+    },
+    "social_source_reconciliation": {
+      "x": {
+        "input_rows": 32198,
+        "retained_rows": 32198,
+        "removed_rows": 0,
+        "text_sha256": "733772bc8228b7c088c28323ec50c3162dcf770ebf02f54631e172c03de71aea"
+      },
+      "youtube": {
+        "input_rows": 50128,
+        "retained_rows": 49954,
+        "removed_rows": 174,
+        "text_sha256": "365f357790c7bbbcf2954f5f30b555818815a31e0c7561bae02792e6470ce8ea"
+      },
+      "reddit": {
+        "input_rows": 393,
+        "retained_rows": 393,
+        "removed_rows": 0,
+        "text_sha256": "9f6aa199e75000ce3e7e06506c6acefa031bf4675ddc703dbb07173fe75b720d"
+      }
+    },
+    "prior_stage_validation": {
+      "generated_at": "2026-10-01T08:16:38.070162+00:00",
+      "passed": true,
+      "sha256": "00d434f4c04701aa7c668314bf739094468281a2d4702c7bffe976452c37f5bb"
+    },
+    "numeric_and_boolean_types": {
+      "records_checked": 1498534
+    },
+    "social_source_metadata_counts": {
+      "x": 2,
+      "youtube": 320,
+      "reddit": 19
+    },
+    "x_quote_context_source_reconciliation": {
+      "retained_versions": 660,
+      "source_text_and_ids_equal": true
+    },
+    "reddit_context_source_reconciliation": {
+      "retained_context_rows": 1
+    },
+    "combined_counts": {
+      "main_input_records": 1018669,
+      "main_retained_records": 1012141,
+      "main_removed_records": 6528,
+      "developer_reply_input_records": 486402,
+      "developer_reply_retained_records": 486393,
+      "developer_reply_removed_records": 9,
+      "developer_replies_to_excluded_reviews": 2205,
+      "context_records": 661,
+      "data_csv_files": 21,
+      "data_csv_bytes": 421740659,
+      "maximum_csv_bytes": 90000000,
+      "csv_row_limit": null
+    }
+  },
+  "error_count": 0,
+  "warning_count": 0,
+  "errors": [],
+  "warnings": [],
+  "passed": true
+}

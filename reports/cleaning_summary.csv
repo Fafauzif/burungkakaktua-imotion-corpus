@@ -1,0 +1,6 @@
+table,input_records,retained_records,removed_records,empty_text,symbol_only,deleted_placeholder,duplicate_capture,count_group
+google_play_reviews,935950,929596,6354,5,6349,0,0,main_corpus
+x,32198,32198,0,0,0,0,0,main_corpus
+youtube,50128,49954,174,1,173,0,0,main_corpus
+reddit,393,393,0,0,0,0,0,main_corpus
+google_play_developer_replies,486402,486393,9,0,9,0,0,developer_replies

@@ -1,0 +1,43 @@
+{
+  "mode": "search",
+  "searchTerms": [
+    "(\"bank aladin\" OR \"aladin syariah\") -saham -stockbit",
+    "aladin (rekening OR tabungan OR transfer OR saldo OR alfamart OR qris) -saham -stockbit",
+    "(\"bank jago\" OR \"jago syariah\") -saham -stockbit",
+    "(\"kantong jago\" OR \"rekening jago\" OR \"saldo jago\")",
+    "(to:tanyajago OR to:jadijago OR @tanyajago OR @jadijago) -from:tanyajago -from:jadijago",
+    "(\"bsi mobile\" OR \"byond bsi\" OR \"byond by bsi\")",
+    "\"bank syariah indonesia\" (rekening OR tabungan OR transfer OR saldo OR aplikasi OR nasabah)",
+    "BSI (migrasi OR gangguan OR error OR \"gagal transfer\")",
+    "(to:bankbsi_id OR to:bsihelp OR @bankbsi_id OR @bsihelp) -from:bankbsi_id -from:bsihelp",
+    "seabank (rekening OR tabungan OR transfer OR saldo OR aplikasi OR nasabah)",
+    "(to:SeaBankID OR to:SeaBankCare OR @SeaBankID OR @SeaBankCare) -from:SeaBankID -from:SeaBankCare",
+    "(\"blu bca\" OR \"blu by bca\" OR \"bca digital\") (rekening OR tabungan OR transfer OR saldo OR aplikasi OR nasabah)",
+    "(to:haloblu OR @haloblu) -from:haloblu",
+    "jenius (bank OR rekening OR tabungan OR saldo OR feesible OR \"biaya admin\")",
+    "(to:jeniusconnect OR to:jeniushelp OR @jeniusconnect OR @jeniushelp) -from:jeniusconnect -from:jeniushelp",
+    "\"bank digital\" (pakai OR pake OR rekening OR aman OR tabungan OR admin OR rekomendasi)",
+    "(\"rekening utama\" OR \"bank utama\" OR \"rekening gaji\")",
+    "(\"pindah bank\" OR \"ganti bank\" OR \"tutup rekening\")",
+    "(\"biaya admin\" OR \"potongan bulanan\") (bank OR rekening OR tabungan)",
+    "(\"rekening syariah\" OR \"tabungan syariah\") (pakai OR pilih OR rekomendasi OR riba OR bagi)",
+    "QRIS (\"gagal bayar\" OR \"saldo terpotong\" OR \"saldo kepotong\" OR \"transaksi gagal\")",
+    "(\"saldo hilang\" OR \"saldo berkurang\" OR \"rekening diblokir\") (aladin OR jago OR seabank OR blu OR jenius OR BSI)",
+    "(\"bagi hasil\" OR \"bebas admin\") (aladin OR \"jago syariah\" OR \"BSI\")"
+  ],
+  "time": {
+    "since": "2025-10-01",
+    "until": "2026-10-01"
+  },
+  "lang": "id",
+  "queryType": "Latest",
+  "maxItems": 32666,
+  "maxItemsPerTarget": 5000,
+  "tweetTypes": {
+    "excludeRetweets": true
+  },
+  "includeSearchTerms": true,
+  "outputVariant": "rich",
+  "outputPreset": "flat",
+  "alwaysSaveRunRecords": true
+}

@@ -1,0 +1,14 @@
+{
+  "main_input_records": 1018669,
+  "main_retained_records": 1012141,
+  "main_removed_records": 6528,
+  "developer_reply_input_records": 486402,
+  "developer_reply_retained_records": 486393,
+  "developer_reply_removed_records": 9,
+  "developer_replies_to_excluded_reviews": 2205,
+  "context_records": 661,
+  "data_csv_files": 21,
+  "data_csv_bytes": 421740659,
+  "maximum_csv_bytes": 90000000,
+  "csv_row_limit": null
+}

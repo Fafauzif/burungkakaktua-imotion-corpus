@@ -1,0 +1,11 @@
+# Google Play reviews
+
+The incoming review export contains 935,950 Google Play reviews across nine apps: Bank Aladin, Allo Bank, Bank Jago / Jago Syariah, Bank Saqu, blu by BCA Digital, BYOND by BSI, Jenius, SeaBank and Superbank. It contains 486,402 developer replies. These are responses attached to reviews, not additional customer reviews. Its six distinct `fetched_at` values fall on 19 September 2026, between 16:12:19 and 16:48:39 UTC. The recorded locales are `id:id` for 858,890 rows and `en:us` for 77,060 rows.
+
+The supplied Python collector reads app IDs from an Excel workbook and calls `google_play_scraper.reviews` with newest-first ordering and continuation tokens. It writes normalized records to per-app JSONL files and rebuilds per-app and combined CSVs. Collection skips IDs already saved. Pagination stops when continuation ends, repeats, reaches a configured page ceiling or fails after retries. Saved job state supports resuming, refreshing and retrying failed or empty jobs.
+
+Python defaults are eight workers, five attempts per page, a two-second initial exponential retry wait capped at 60 seconds, a 45-second timeout, up to 4,500 reviews per page, no page ceiling and no between-page delay. The Windows menu allows workers, retries, locales and page ceilings to change. These describe the supplied collector configuration, not measured settings for the incoming export.
+
+The collector decodes HTML entities, removes tags and null characters, and collapses whitespace before saving text. Its cleaning pass deduplicates by platform, app ID and review ID, with a deterministic field hash for missing IDs. The cleaner merges duplicate rows already present in JSONL. It fills blank fields, prefers longer review or reply text, keeps larger helpfulness counts and joins locale values. Collection itself keeps the first saved instance of an ID, so later locale encounters do not necessarily reach that merge step. This collector retains blank review text.
+
+The incoming CSV also contains derived fields such as sentiment, topics and reply lag, beyond the collector's output schema. They are not original store fields. Store pagination, locales, deletions and access limits affect coverage. `scripts/collection/` contains unchanged copies of the supplied collection scripts.

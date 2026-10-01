@@ -1,0 +1,10 @@
+app_name,source_id,input_developer_replies,input_reviews,removed_empty_text,removed_symbol_only,replies_to_excluded_review,reply_removed_symbol_only,retained_developer_replies,retained_reviews
+Bank Aladin,google_play_bank_aladin,29026,33501,0,91,82,0,29026,33410
+Allo Bank,google_play_allo_bank,36350,45902,0,205,153,0,36350,45697
+Bank Jago / Jago Syariah,google_play_bank_jago_jago_syariah,65595,84043,0,723,518,0,65595,83320
+Bank Saqu,google_play_bank_saqu,17609,17817,0,127,126,0,17609,17690
+blu by BCA Digital,google_play_blu_by_bca_digital,36380,36380,0,185,185,3,36377,36195
+BYOND by BSI,google_play_byond_by_bsi,70166,70602,0,92,89,0,70166,70510
+Jenius,google_play_jenius,42379,130872,4,380,130,1,42378,130488
+SeaBank,google_play_seabank,130625,457824,1,4399,777,5,130620,453424
+Superbank,google_play_superbank,58272,59009,0,147,145,0,58272,58862
